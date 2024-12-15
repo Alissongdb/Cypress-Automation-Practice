@@ -1,6 +1,7 @@
 # Projeto de Testes em Cypress com Padrão Page Object
 
-Este é um projeto de automação de testes utilizando **Cypress** e o padrão **Page Object**. O objetivo é garantir a funcionalidade do sistema através de testes automatizados, organizando os testes de forma clara e reutilizável usando o padrão Page Object para gerenciar interações com as páginas da aplicação.
+Este é um projeto de automação de testes da pagina 'https://practice.automationtesting.in',
+utilizando **Cypress** e o padrão **Page Object**. O objetivo é garantir a funcionalidade do sistema através de testes automatizados, organizando os testes de forma clara e reutilizável usando o padrão Page Object para gerenciar interações com as páginas da aplicação.
 
 ## Estrutura do Projeto
 
