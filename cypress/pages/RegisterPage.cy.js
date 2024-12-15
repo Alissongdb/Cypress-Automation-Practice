@@ -1,97 +1,29 @@
 /// <reference types="cypress" />
 
-
 class RegisterPage {
-    visit() {
-        cy.visit('/');
+
+    clickMenuPageInitial() {
+        cy.get('#menu-icon').click();
     }
 
-    clickBtnRegister() {
-        cy.get('#btn2')
-            .click()
-    }
-
-    fillFirstName(name) {
-        cy.get(':nth-child(1) > :nth-child(2) > .form-control')
-            .type(name)
-    }
-
-    fillLastName(lastname) {
-        cy.get(':nth-child(1) > :nth-child(3) > .form-control')
-            .type(lastname)
-    }
-
-    fillAddress(address) {
-        cy.get('.col-md-8 > .form-control')
-            .type(address)
+    clickMyAccount() {
+        cy.contains('My Account').click();
     }
 
     fillEmail(email) {
-        cy.get('#eid > .form-control')
-            .type(email)
+        cy.get('#reg_email')                
+            .type(email);     
     }
 
-    fillPhone(phone) {
-        cy.get(':nth-child(4) > .col-md-4 > .form-control')
-            .type(phone)
+    fillPassword(password) {
+        cy.get('#reg_password')
+            .type(password);
     }
 
-    fillGender() {
-        cy.get(':nth-child(5) > .col-md-4 > :nth-child(1) > input')
-            .check()
-
-    }
-
-    fillHobbies() {
-        cy.get('#checkbox2')
-            .should('be.visible')
+    btnRegister() {
+        cy.get('.woocomerce-FormRow > .woocommerce-Button')
             .click();
     }
-
-    fillSkills() {
-        cy.get('#Skills')
-            .select('Javascript')
-
-    }
-
-    fillCountry() {
-        cy.get('.select2-selection')
-            .click()
-        cy.get('#select2-country-results > :nth-child(2)')
-            .click()
-    }
-
-    fillBirthday() {
-        cy.get('#yearbox')
-            .select('1999')
-
-        cy.get(':nth-child(11) > :nth-child(3) > .form-control')
-            .select('December')
-
-        cy.get('#daybox')
-            .select('13')
-
-    }
-
-    fillPasswords(password) {
-        cy.get('#firstpassword')
-            .type(password)
-
-        cy.get('#secondpassword')
-            .type(password)
-
-    }
-
-    btnSubmit() {
-        cy.get('#submitbtn')
-            .click()
-    }
-
-
-
-
-
-
 
 }
 
