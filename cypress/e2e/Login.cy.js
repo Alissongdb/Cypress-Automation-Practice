@@ -8,7 +8,7 @@ describe('Logar usuario', () => {
         cy.visit('/');
     });
 
-    it('Devo acessar o site e logar o usuario', () => {
+    it('Devo logar o usuario', () => {
         LoginPage.clickMenuPageInitial()
         LoginPage.clickMyAccount()
         LoginPage.fillEmailLogin('alissoncupinchaveio@hotmail.com')

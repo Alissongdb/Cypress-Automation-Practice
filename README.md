@@ -9,10 +9,9 @@ O projeto é organizado utilizando o padrão Page Object, onde cada página do s
 
 ### Arquivos principais
 
-- `loginpage.js`: Contém os métodos de interação com a página de login.
-- `login.js`: Define os testes de login utilizando os métodos da `loginpage.js`.
-- `registerpage.js`: Contém os métodos de interação com a página de registro.
-- `register.js`: Define os testes de registro utilizando os métodos da `registerpage.js`.
+- LoginPage
+- RegisterPage
+- ShopPage
 
 Mais testes serão adicionados em breve à medida que novas funcionalidades forem desenvolvidas.
 

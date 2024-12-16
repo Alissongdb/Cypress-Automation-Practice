@@ -8,7 +8,7 @@ describe('Registrar usuario', () => {
     cy.visit('/');
   });
 
-  it('Devo acessar o site e registrar o usuario', () => {
+  it('Devo registrar o usuario', () => {
     RegisterPage.clickMenuPageInitial();
     RegisterPage.clickMyAccount();
     RegisterPage.fillEmail('alissoncupinchaveio@hotmail.com');
